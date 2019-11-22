@@ -1,4 +1,5 @@
 # INFRAN TRIAL
+# POWERED BY: GRIT (https://grit.id) (C) 2019
 ## INFRAN is fast, accurate, affordable, and scalable biometrics face recognition platform.
 # Disclaimer
 All photos uploaded to INFRAN TRIAL server are safe and We don't use except for research.
