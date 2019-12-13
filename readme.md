@@ -99,6 +99,6 @@ Success response:
 
 # TRIAL CLIENT EXAMPLE
 We have provided the trial client example file. For now, the available example is for Python 3.
-You simply can do `pip install requests` and `python api-woisit-trial.py`
+You simply can do `pip install requests` and `python api-whoisit-trial.py`
 
 #### Copyright © 2019 GRIT.ID
