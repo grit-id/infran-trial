@@ -15,7 +15,9 @@ Trial APIs is consisting of 4 free to use APIs, and cumulative hits for all API 
 
 All URL for API is http://trial.api.infran.grit.id
 
-1. `/api/infran/addfruser`
+1. REGISTER USER
+
+`/api/infran/addfruser`
 This API is used for register user folder at Infran Trial server. Before using `/uploadreg` API, all user shall hit this API and use the same `nik` and `nama` as payload.
 Hit using POST request with this payload:
 ```json
@@ -31,7 +33,8 @@ Success response:
   "status": "succeed register new user test001"
 }
 ```
-2. `/api/infran/uploadreg`
+2. ENROLLMENT
+`/api/infran/uploadreg`
 This API is used for register face photo to Infran Trial service so the user can use our identification service later after the image being trained.
 Hit using POST request with this payload:
 ```json
@@ -50,7 +53,9 @@ Success response:
   "err_code": "0"
 }
 ```
-3. `/api/infran/rtm`
+3. TRAIN 
+
+`/api/infran/rtm`
 This API is used for do the training process after finished uploading all photos to Infran Trial Server.
 Hit using POST request with this payload:
 ```json
@@ -65,7 +70,9 @@ Success response:
   "status": "Training Succeed"
 }
 ```
-4. `/api/infran/whoisit`
+4. RECOGNITION 
+
+`/api/infran/whoisit`
 This API is used for do the face recognition after finished uploading all photos, and training process to Infran Trial Server.
 Hit using POST request with this payload:
 ```json
@@ -97,8 +104,12 @@ Success response:
 }
 ```
 
+
 # TRIAL CLIENT EXAMPLE
-We have provided the trial client example file. For now, the available example is for Python 3.
+We have provided the trial client example file.
+#### Python
 You simply can do `pip install requests` and `python api-whoisit-trial.py`
+#### JavaScript
+See ./client/js/infran-API.js
 
 #### Copyright © 2019 GRIT.ID
