@@ -34,6 +34,7 @@ Success response:
 }
 ```
 2. ENROLLMENT
+
 `/api/infran/uploadreg`
 This API is used for register face photo to Infran Trial service so the user can use our identification service later after the image being trained.
 Hit using POST request with this payload:
@@ -106,10 +107,13 @@ Success response:
 
 
 # TRIAL CLIENT EXAMPLE
+### Mobile Client: React Native
+See https://github.com/grit-id/infran-mobile-client-rn
+
 We have provided the trial client example file.
 #### Python
 You simply can do `pip install requests` and `python api-whoisit-trial.py`
 #### JavaScript
-See ./client/js/infran-API.js
+See client/js/infran-API.js
 
-#### Copyright © 2019 GRIT.ID
+#### Copyright © 2020 GRIT.ID
