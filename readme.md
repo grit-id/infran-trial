@@ -14,6 +14,7 @@ Trial APIs is made for public users which wanted to try GRIT's INFRAN FR Platfor
 Trial APIs is consisting of 4 free to use APIs, and cumulative hits for all API is limited to 100 hits per day per trial user:
 
 All URL for API is http://trial.api.infran.grit.id
+Authorization API using Basic Auth, for trial using username & password "trial" or add "trial":"yes" to json payload
 
 1. REGISTER USER
 
@@ -86,7 +87,7 @@ Success response:
 ```json
 {
   "person_in_picture": [
-    "bj_habibie"
+    "bj habibie"
   ],
   "pip_nik": [
     "123456789"
@@ -102,6 +103,33 @@ Success response:
   "time": "2019-09-21T11:14:39.416538",
   "err_code": "0",
   "status": "Found Person in Picture"
+}
+```
+5. VERIFICATION 
+
+`/api/infran/whoisit`
+This API is used for do the face verification after finished uploading all photos, and training process to Infran Trial Server.
+Hit using POST request with this payload:
+```json
+{
+	"data": "base64 of JPEG file",
+	"hash": "sha256 of JPEG file",
+	"nama": "person name to compare"
+}
+```
+Success response:
+```json
+{
+    "data": [
+        {
+            "person_in_picture": "bj habibie",
+            "pip_nik": "123456789",
+            "is_same_person": true,
+            "score": 0.8998371755
+        }
+    ],
+    "status": "Verified as bj habibie",
+    "err_code": 0
 }
 ```
 
