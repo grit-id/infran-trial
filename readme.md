@@ -107,7 +107,7 @@ Success response:
 ```
 5. VERIFICATION 
 
-`/api/infran/whoisit`
+`/api/infran/verify`
 This API is used for do the face verification after finished uploading all photos, and training process to Infran Trial Server.
 Hit using POST request with this payload:
 ```json
