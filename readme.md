@@ -114,7 +114,8 @@ Hit using POST request with this payload:
 {
 	"data": "base64 of JPEG file",
 	"hash": "sha256 of JPEG file",
-	"nama": "person name to compare"
+	"nama": "person name to compare",
+	"nik": "unique number to compare"
 }
 ```
 Success response:
